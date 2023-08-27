@@ -1,0 +1,17 @@
+( hello )
+
+%EMIT { #18 DEO }
+%EXIT { #0f DEO }
+%PUTS { #1a DEO2 }
+
+( init )
+
+|0100 @program
+
+	;hello-word PUTS
+	#00 EXIT
+
+BRK
+
+@hello-word "Hello, 20 "world! 0a 00
+
